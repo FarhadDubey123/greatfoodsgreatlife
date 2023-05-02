@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TDILCS🔥🌍TDIL Consultancy Services🌍</title>
+  <link rel="icon" type="image/x-icon" href="/tdilcs-favicon-final-upnov10.ico">
+  <meta name="description" content="World's Best Web-Designing & Software Development Company">
+  <meta name="keywords"
+    content="Web-Designing, Software Development, Graphics Designing, Digital Marketing, SEO, Printing, Business Document Quick Registration Services">
+  <meta name="author" content="TDIL the Wondrous Group">
+  <meta name="parent-company" content="TDIL (The Dubey Industries Limited)">
+  <meta name="Chairman & CEO" content="Farhad Dubey">
+  <meta name="Main Website of TDILCS" content="https://www.tdilcs.com">
+  <!-- <meta http-equiv="refresh" content="5"> -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0px;
+      font-family: 'segoe ui';
+    }
+
+    .nav {
+      height: 85px;
+      width: 100%;
+      background-color: #000000;
+      position: relative;
+    }
+
+
+    .nav>.nav-header {
+      display: inline;
+    }
+
+    .nav>.nav-header>.nav-title {
+      display: inline-block;
+      font-size: 30px;
+      color: rgb(255, 255, 255);
+      padding: 5px 5px 10px 5px;
+      position: relative;
+      top: -30px;
+    }
+
+    .nav>.nav-btn {
+      display: none;
+    }
+
+    .nav>.nav-links {
+      display: inline;
+      float: right;
+      font-size: 18px;
+      position: relative;
+      left: 300px;
+    }
+
+    .nav>.nav-links>a {
+      display: inline-block;
+      border-radius: 5px;
+      padding: 13px 10px 13px 10px;
+      text-decoration: none;
+      color: #efefef;
+    }
+
+    .nav>.nav-links>a:hover {
+      background-color: rgba(38, 127, 35, 0.189);
+      color: rgb(0, 255, 0);
+    }
+
+    .nav>#nav-check {
+      display: none;
+    }
+
+    .container-tdilcs-for-mobile-001>.row>.col-md-12>.animate-charcter {
+      display: inline-block;
+      font-size: 32px;
+      justify-content: center;
+      position: relative;
+      top: -40px;
+      left: -540px;
+    }
+
+    @media (max-width:600px) {
+      .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+
+      .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+
+      .nav>.nav-btn>label:hover,
+      .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+
+      .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all .3s ease-in;
+        overflow-y: hidden;
+        top: 70px;
+        left: 0px;
+      }
+
+      .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+      }
+
+      .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+      }
+
+      .nav>#nav-check:checked~.nav-links {
+        height: calc(80vh - 50px);
+        overflow-y: auto;
+      }
+
+      .nav>.nav-header>.nav-title {
+        display: none;
+        font-size: 30px;
+        color: rgb(4, 255, 0);
+        padding: 5px 5px 10px 5px;
+        position: relative;
+        top: -78px;
+      }
+
+      .container-tdilcs-for-mobile-001>.row>.col-md-12>.animate-charcter {
+        display: inline-block;
+        font-size: 20px;
+        justify-content: center;
+        position: relative;
+        top: -25px;
+        left: 3px;
+      }
+
+      .nav {
+        height: 70px;
+        width: 100%;
+        background-color: #000000;
+        position: relative;
+      }
+
+      .tdil-logo-1 {
+        display: none;
+      }
+    }
+
+
+    div.nav-links {
+      display: block;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+
+    .tdil-logo-1 {
+      position: relative;
+      top: 5px;
+      left: 455px;
+    }
+
+    .tdilcs-img1 {
+      position: relative;
+      top: -10px;
+
+    }
+
+  </style>
+  <style>
+    .nav > .nav-links > ul{
+
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      height: 100%;
+      list-style-type: none;
+      background-color:rgba(128, 0, 128, 0.416);
+      overflow: visible;
+    }
+      .nav > .nav-links > ul > li{
+        display: block;
+        float: left;
+        height: auto;
+        width: 100px;
+      }
+      .nav > .nav-links > ul > li > a{
+        display: block;
+        padding: 0 0 0 10px;
+        height: 100%;
+        width: auto;
+        text-decoration: none;
+        background-color: #5d5d5d;
+      }
+      #navigationbar .navlinks ul ul{
+        display: none;
+        position: static;
+
+      }
+      #navigationbar .navlinks ul ul li{
+        position: relative;
+        float: none;
+        display: none;
+        height: 28px;
+        width: 100%;
+        border: none;
+
+      }
+      #navigationbar .navlinks ul ul li > a{
+
+      }
+      .nav .navlinks li:hover > ul{
+        display: block;
+      }
+      
+      
+      
+      .nav>.nav-btn {
+      display: none;
+    }
+
+    .nav> .nav-links > ul > li > a{
+      display: none;
+      float: left;
+      font-size: 18px;
+      position: inherit;
+      left: 300px;
+    }
+    .nav> .nav-links > ul > ul > li{
+      display: none;
+      float: left;
+      font-size: 18px;
+      position: inherit;
+      left: 300px;
+    }
+
+    .nav>.nav-links>a {
+      display: inline-block;
+      border-radius: 5px;
+      padding: 13px 10px 13px 10px;
+      text-decoration: none;
+      color: #efefef;
+    }
+
+    .nav>.nav-links>a:hover {
+      background-color: rgba(38, 127, 35, 0.189);
+      color: rgb(0, 255, 0);
+    }
+
+    .nav>#nav-check {
+      display: none;
+    }
+
+
+
+</style>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./style-tdilcs.css">
+</head>
+
+<body>
+  <div class="nav" id="navigationbar">
+    <a href="https://www.tdilcs.com"><img class="tdilcs-img1" src="/tdilcs-upnov12-small.png" height="80px"></a>
+    <input type="checkbox" id="nav-check">
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <div class="nav-links">
+    <ul>
+        <li><a href="/" target="_blank">Industries</a>
+        <ul>
+          <!-- <li>Products</li>
+          <li>Products</li>
+          <li>Products</li>
+          <li>Products</li>
+          <li>Products</li> -->
+         </ul>       
+        </li>
+        <li><a href="/" target="_blank">Servies</a>
+       <ul>
+        <li>Products</li>
+        <li>Products</li>
+        <li>Products</li>
+        <li>Products</li>
+        <li>Products</li>
+       </ul> 
+      </li>
+        <li><a href="/" target="_blank">Products & Platforms</a>
+          <ul>
+            <li>P</li>
+            <li>p</li>
+            <li>p</li>
+            <li>p</li>
+          </ul>
+          </li>
+        <li><a href="/" target="_blank">Discover TDILCS</a>
+          <ul>
+            <li>P</li>
+            <li>p</li>
+            <li>p</li>
+            <li>p</li>
+          </ul>
+          </li>
+        <li><a href="/" target="_blank">Insights</a>
+          <ul>
+            <li>P</li>
+            <li>p</li>
+            <li>p</li>
+            <li>p</li>
+          </ul>
+          </li>
+        <li><a href="/" target="_blank">Careers</a>
+          <ul>
+            <li>P</li>
+            <li>p</li>
+            <li>p</li>
+            <li>p</li>
+          </ul>
+          </li>
+        <li><a href="/" target="_blank">Quick Buy</a>
+          <ul>
+            <li>P</li>
+            <li>p</li>
+            <li>p</li>
+            <li>p</li>
+          </ul>
+          </li>
+        <li><a href="https://www.tdil.org.in">TDIL Care</a>
+          <ul>
+            <li>P</li>
+            <li>p</li>
+            <li>p</li>
+            <li>p</li>
+          </ul>
+          </li>
+      </ul>
+    </div>
+    <a class="tdil-logo-1" href="https://www.tdilcs.com"><img src="/tdillogo1.png" height="80px"></a>
+  </div>
+  <!-- partial:index.partial.html -->
+  <div class="container-tdilcs-for-mobile-001">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3 class="animate-charcter">TDIL Consultancy Services</h3>
+      </div>
+    </div>
+  </div>
+  <!-- partial -->
+</body>
+
+</html>

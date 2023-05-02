@@ -1,0 +1,17 @@
+/**
+ * @file
+ * Basic styling for the program.
+ */
+body {
+  background: #000;
+  margin: 5px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  top: 10px;
+  left: 0px;
+}
+container-earth{
+  position: relative;
+  top: 200px;
+}

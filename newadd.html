@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+        * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* background-color: #060C1F; */
+  font-family: 'Almarai', sans-serif;
+}
+
+.wrapper {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.main-div {
+  position: relative;
+  margin: 10px;
+  background-color: transparent;
+}
+
+.main-div1::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 50%;
+  -webkit-box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+          box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+  z-index: -1;
+  -webkit-animation-name: yellow-shadow;
+          animation-name: yellow-shadow;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.main-div1::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 50%;
+  -webkit-box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+          box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+  z-index: -1;
+  -webkit-animation-name: cyan-shadow;
+          animation-name: cyan-shadow;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.main-div2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+          box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+  z-index: -1;
+  -webkit-animation-name: gradient-shadow;
+          animation-name: gradient-shadow;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.main-div3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  -webkit-box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+          box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+  z-index: -1;
+  -webkit-animation-name: half-yellow-shadow;
+          animation-name: half-yellow-shadow;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.main-div3::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  -webkit-box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+          box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+  z-index: -1;
+  -webkit-animation-name: half-cyan-shadow;
+          animation-name: half-cyan-shadow;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+  position: relative;
+  left:0px ;
+  right:0px ;
+  top:0px ;
+  bottom:0px ;
+
+  z-index: 3;
+  padding: 20px;
+  background-color: #060C1F;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+@-webkit-keyframes yellow-shadow {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 50%;
+    left: 0;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  75% {
+    top: 0;
+    left: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes yellow-shadow {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 50%;
+    left: 0;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  75% {
+    top: 0;
+    left: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@-webkit-keyframes cyan-shadow {
+  0% {
+    right: 0;
+    bottom: 0;
+  }
+  25% {
+    right: 0;
+    bottom: 50%;
+  }
+  50% {
+    right: 50%;
+    bottom: 50%;
+  }
+  75% {
+    right: 50%;
+    bottom: 0;
+  }
+  100% {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@keyframes cyan-shadow {
+  0% {
+    right: 0;
+    bottom: 0;
+  }
+  25% {
+    right: 0;
+    bottom: 50%;
+  }
+  50% {
+    right: 50%;
+    bottom: 50%;
+  }
+  75% {
+    right: 50%;
+    bottom: 0;
+  }
+  100% {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@-webkit-keyframes gradient-shadow {
+  0% {
+    -webkit-box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+            box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+  }
+  20% {
+    -webkit-box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+            box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+  }
+  40% {
+    -webkit-box-shadow: 0 0 17px 3px #0f0,0 0 4px 2px #0f0;
+            box-shadow: 0 0 17px 3px #0f0,0 0 4px 2px #0f0;
+  }
+  60% {
+    -webkit-box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+            box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+  }
+  80% {
+    -webkit-box-shadow: 0 0 17px 3px #f00,0 0 4px 2px #f00;
+            box-shadow: 0 0 17px 3px #f00,0 0 4px 2px #f00;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+            box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+  }
+}
+
+@keyframes gradient-shadow {
+  0% {
+    -webkit-box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+            box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+  }
+  20% {
+    -webkit-box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+            box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+  }
+  40% {
+    -webkit-box-shadow: 0 0 17px 3px #0f0,0 0 4px 2px #0f0;
+            box-shadow: 0 0 17px 3px #0f0,0 0 4px 2px #0f0;
+  }
+  60% {
+    -webkit-box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+            box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+  }
+  80% {
+    -webkit-box-shadow: 0 0 17px 3px #f00,0 0 4px 2px #f00;
+            box-shadow: 0 0 17px 3px #f00,0 0 4px 2px #f00;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+            box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+  }
+}
+
+@-webkit-keyframes half-yellow-shadow {
+  0% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 50%;
+  }
+  16.66% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+  }
+  32.32% {
+    top: 0;
+    left: 50%;
+    height: 50%;
+    width: 50%;
+  }
+  49.98% {
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: 50%;
+  }
+  66.64% {
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+  }
+  83.3% {
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 50%;
+  }
+}
+
+@keyframes half-yellow-shadow {
+  0% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 50%;
+  }
+  16.66% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+  }
+  32.32% {
+    top: 0;
+    left: 50%;
+    height: 50%;
+    width: 50%;
+  }
+  49.98% {
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: 50%;
+  }
+  66.64% {
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+  }
+  83.3% {
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes half-cyan-shadow {
+  0% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 50%;
+  }
+  16.66% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+  }
+  32.32% {
+    bottom: 0;
+    right: 50%;
+    height: 50%;
+    width: 50%;
+  }
+  49.98% {
+    bottom: 50%;
+    right: 50%;
+    height: 50%;
+    width: 50%;
+  }
+  66.64% {
+    bottom: 50%;
+    right: 0;
+    height: 50%;
+    width: 100%;
+  }
+  83.3% {
+    bottom: 50%;
+    right: 0;
+    height: 50%;
+    width: 50%;
+  }
+  100% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 50%;
+  }
+}
+
+@keyframes half-cyan-shadow {
+  0% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 50%;
+  }
+  16.66% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+  }
+  32.32% {
+    bottom: 0;
+    right: 50%;
+    height: 50%;
+    width: 50%;
+  }
+  49.98% {
+    bottom: 50%;
+    right: 50%;
+    height: 50%;
+    width: 50%;
+  }
+  66.64% {
+    bottom: 50%;
+    right: 0;
+    height: 50%;
+    width: 100%;
+  }
+  83.3% {
+    bottom: 50%;
+    right: 0;
+    height: 50%;
+    width: 50%;
+  }
+  100% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 50%;
+  }
+}
+    .descriptions {
+      width: 1480px;
+      height: 3000px;
+      border: 4px solid green;
+      padding: 10px;
+      margin: -2px;
+      align-items: flex-end;
+      flex-direction: row;
+    }
+
+
+
+    .web-development-description1 {
+      font-size: 25px;
+      width: 1050px;
+      height: 70px;
+      /* border: 4px solid green; */
+      padding: 4px;
+      margin: -300px 400px;
+      align-items: flex-end;
+      flex-direction: row-reverse;
+
+    }
+
+    .i-web-development-pic2 {
+      margin: -128px 210px;
+      size: 80%;
+
+    }
+
+    .web-development-description2 {
+      font-size: 26px;
+      width: 1050px;
+      height: 70px;
+      /* border: 4px solid green; */
+      padding: 4px;
+      margin: -305px 5px;
+      align-items: flex-end;
+      flex-direction: row-reverse;
+    }
+
+    .i-web-development-pic:hover {
+      size: 110%;
+    }
+
+    h3 {
+      display: block;
+      font-size: 2.7em;
+      margin-block-start: 0em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+    }
+
+    p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    #web-development-description1 {
+      font-size: 25px;
+      width: 1050px;
+      height: 70px;
+      /* border: 4px solid green; */
+      padding: 4px;
+      margin: -300px 400px;
+      align-items: flex-end;
+      flex-direction: row-reverse;
+
+
+    }
+
+    .web-development-description-nextline-beginning {
+      font-size: 20px;
+      width: 450px;
+      height: 70px;
+      /* border: 4px solid green; */
+      padding: 4px;
+      margin: -300px 400px;
+      align-items: flex-end;
+      flex-direction: row-reverse;
+      margin: 20px -390px;
+    }
+    .i-web-development-pic{
+      position: relative;
+      bottom: 0px;
+      right: 0 px;
+      left: 40px;
+      top: 50px;
+    }
+    .i-web-development-pic{
+      transition: 1s ease;
+          }
+
+    .i-web-development-pic:hover{
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      transition: 1s ease;
+}
+
+
+    .web-development-pic2 {
+      margin: 1px 1px;
+      size: 30%;
+      padding: 12px;
+    }
+
+    .i-web-development-pic2 {
+      width: 700px;
+      height: fit-content;
+      border-radius: 2px;
+      border-radius: 35px;
+
+      position: relative;
+      bottom: 0px;
+      right: 0px;
+      left: 5px;
+      top: 50px;
+    }
+
+    .i-web-development-pic2{
+      transition: 1s ease;
+          }
+
+    .i-web-development-pic2:hover{
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      transition: 1s ease;
+}
+
+    .marquee1 {
+      padding: 0px 20px;
+
+
+    }
+    .marquee-style{
+      position: relative;
+      bottom: 0px;
+      right: 0px;
+      left: -405px;
+      top: 400px;
+
+      width:1414px ;
+      height: fit-content;
+
+
+
+    }
+    .web-development-description1 .wrapper{
+      display: flex;
+      align-items:flex-end;
+    }
+    .web-development-description1 h1{
+      font-size: 45px;
+      
+    }
+    .web-development-description2 h1{
+      font-size: 24px;
+      
+    }
+    .descriptions2 {
+      width: 1480px;
+      height: 3000px;
+      position:relative;
+      bottom: 0px;
+      left: -12px;
+      right: 0px;
+      top: 1500px;
+      /* border: 4px solid green; */
+      padding: 10px;
+      margin: -2px;
+      align-items: flex-end;
+      flex-direction: row;
+    }
+    .descriptions2 .div.wrapper{
+      width: 1480px;
+      height: fit-content;
+    }
+    .wrapper2{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: normal;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-start;
+    overflow: hidden;
+    width: 1480px;
+}
+.web-development-description-nextline-beginning2{
+      position: relative;
+      left: 990px;
+      right: 0px;
+      top: -65px;
+      bottom: 0px;
+
+      font-size: 20px;
+      width: 950px;
+      height: 70px;
+      /* border: 4px solid green; */
+      padding: 4px;
+      margin: -300px 400px;
+      display: flex;
+      align-items:flex-start;
+      flex-direction: column;
+      margin: 20px -390px;
+      text-align: right;
+      
+
+}
+p.web-development-description-nextline-beginning2{
+  text-align: left;
+
+}
+/* .web-development-pic3{
+  position: relative;;
+  left:0px ;
+  right:0px ;
+  top:-15px;
+  bottom: 0px;
+} */
+
+
+
+
+
+    
+  </style>
+
+
+</head>
+
+<body>
+  <div class="header-long-descriptions-of-services" id="header-long-descriptions-of-services">
+    <div class="descriptions" id="description1">
+      <div class="web-development-pic1" id="web-development-pic1">
+        <a href="https://www.tdil.org.in" target="_blank"><img class="i-web-development-pic" id="i-web-development-pic1" src="pic/webdesign2.png"
+          alt="TDIL Consultancy Services Brand Logo"></a>
+      </div>
+      <div class="web-development-description1" id="web-development-description1" >
+        <a href="https://www.tdil.org.in" target="_blank"><h3 class="web-development" id="wddd1"><div class="wrapper">
+        <div class="main-div main-div1">
+          <h1>Web Designing</h1>
+        </div>
+        <div class="main-div main-div2">
+          <h1> &nbsp;&&nbsp;</h1>
+        </div>
+        <div class="main-div main-div3">
+          <h1>Development Services</h1>
+        </div>
+      </div></h3></a>
+        <p>In online industries, there is an exposed race among the companies working in the development of websites and
+          their Designing. At TDILCS, we independently take charge to deliver a concrete and statutory production of
+          websites. We evolve preeminent websites that perform well with great potential to maintain their elementary
+          and figurative response which definitely embarks your business and take them to a new height of success.<br>
+        <div class="web-development-description-nextline-beginning">
+          We provide expert solutions in Website designing, Hosting websites, Responsive domains, Professional solution,
+          and all-around Management with cross-platform compatibility. We make sure to design logically customized and
+          impactful websites that are aligned to search engines, trusted and certified with great mobile endurance.<br><br>
+
+          TDIL Consultancy Services (TDILCS) is indigenously competent to deliver exclusively design websites with a
+          great user interface that leads your productivity a way higher. We value our associates and compliance
+          regularly in our deliberated scenario.<br><br>
+
+          From structure to layouts and developing to deliver we maintain effective designing and developing process. We
+          at TDILCS are always keen and curious to go beyond in designing and structuring websites that fulfill the
+          exact requirements of the clientele.</p>
+        </div>
+        <div class="web-development-pic2" id="web-development-pic2">
+          <a href="https://www.tdil.org.in" target="_blank"><img class="i-web-development-pic2" id="i-web-development-pic2" src="pic/desi1a1@2x.png"
+          alt="TDIL Consultancy Services Brand Logo"></a>
+        </div>
+    </div>
+    <div class="descriptions2" id="description2">
+      <div class="web-development-description2" id="web-development-description2" >
+        <a href="https://www.tdil.org.in" target="_blank"><h3 class="web-development2" id="wddd2"><div class="wrapper2">
+          <div class="main-div main-div1">
+            <h1>Why you should choose</h1>
+          </div>
+          <div class="main-div main-div2">
+            <h1> &nbsp;TDILCS&nbsp;</h1>
+          </div>
+          <div class="main-div main-div3">
+            <h1>as the best Web-Designing & App Development Company in the World?</h1>
+          </div>
+        </div></h3></a>
+        <div class="web-development-description-nextline-beginning2">
+
+        <p>TDILCS is the World's No.1 fastest growing, Web-Designing & App Development Company. </p>
+        <p>Affordable & Reasonable cost for website designing and app development.</p>
+        <p>No hidden cost, No unwanted charges. No arguments & No harrassement. </p>
+        <p>Everything is executed stricly according to the rules of TDIL Consultancy Services &<br> TDIL the Wondrous Group.</p>
+        <p>Written Contract & Rules Hard-Copy is always provided & granted  with hassle free process.</p>
+        <P>Get 24 hours Technical Support on any working days.</P>
+        <P>100% Free Life Time Technical Support</P>
+        <P>Search Engine friendly website & Android Applications</P>
+        <P>Always Latest & the best technology used for website design</P>
+        <P>Responsive-ness & Security on product is guranteed. </P>
+          
+            
+          </div>
+          <div class="web-development-pic3" id="web-development-pic3">
+            <a href="https://www.tdil.org.in" target="_blank"><img class="i-web-development-pic" id="i-web-development-pic1" src="pic/webdesign2.png"
+              alt="TDIL Consultancy Services Brand Logo"></a>
+          </div>
+        <div class="web-development-pic3no" id="web-development-pic3no">
+          <a href="https://www.tdil.org.in" target="_blank"><img class="i-web-development-pic2" id="i-web-development-pic2" src="pic/desi1a1@2x.png"
+          alt="TDIL Consultancy Services Brand Logo"></a>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div>
+        
+      <!-- <div class="marquee-style" id="marquee-style">  
+        <div class="marquee" id="marquee1">
+          <h2>Our Clients...</h2>
+          <center>
+            <marquee>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee1" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee2" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee3" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee4" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee1" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee2" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee3" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee4" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee1" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee2" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee3" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee4" src="pic/Ai.png"
+                  width="100" height="100"></a>
+            </marquee>
+          </center>
+        </div>
+        <div class="marquee" id="marquee2">
+          <center>
+            <marquee>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee1" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee2" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee3" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee4" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee1" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee2" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee3" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee4" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee1" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee2" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee3" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee4" src="pic/Ai.png"
+                  width="100" height="100"></a>
+            </marquee>
+          </center>
+        </div>
+      </div> -->
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+  </div>
+
+</body>
+
+</html>

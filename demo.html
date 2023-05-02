@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *.header-long-descriptions-of-services {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .header-long-descriptions-of-services body {
+      margin: 0;
+      /* background-color: #060C1F; */
+      font-family: 'Almarai', sans-serif;
+    }
+
+    .wrapper {
+      height: 20vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .main-div {
+      position: relative;
+      margin: 10px;
+      background-color: transparent;
+    }
+
+    .main-div1::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 50%;
+      -webkit-box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+      box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+      z-index: -1;
+      -webkit-animation-name: yellow-shadow;
+      animation-name: yellow-shadow;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease;
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+
+    .main-div1::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      height: 50%;
+      -webkit-box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+      box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+      z-index: -1;
+      -webkit-animation-name: cyan-shadow;
+      animation-name: cyan-shadow;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease;
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+
+    .main-div2::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+      box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+      z-index: -1;
+      -webkit-animation-name: gradient-shadow;
+      animation-name: gradient-shadow;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease;
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+
+    .main-div3::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      -webkit-box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+      box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+      z-index: -1;
+      -webkit-animation-name: half-yellow-shadow;
+      animation-name: half-yellow-shadow;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease;
+      -webkit-animation-duration: 5s;
+      animation-duration: 5s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+
+    .main-div3::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      height: 100%;
+      -webkit-box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+      box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+      z-index: -1;
+      -webkit-animation-name: half-cyan-shadow;
+      animation-name: half-cyan-shadow;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease;
+      -webkit-animation-duration: 5s;
+      animation-duration: 5s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+
+    .header-long-descriptions-of-services h1 {
+      font-size: 45px;
+      margin: 0;
+      position: relative;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+
+      z-index: 3;
+      padding: 20px;
+      background-color: #060C1F;
+      color: #fff;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+
+    @-webkit-keyframes yellow-shadow {
+      0% {
+        top: 0;
+        left: 0;
+      }
+
+      25% {
+        top: 50%;
+        left: 0;
+      }
+
+      50% {
+        top: 50%;
+        left: 50%;
+      }
+
+      75% {
+        top: 0;
+        left: 50%;
+      }
+
+      100% {
+        top: 0;
+        left: 0;
+      }
+    }
+
+    @keyframes yellow-shadow {
+      0% {
+        top: 0;
+        left: 0;
+      }
+
+      25% {
+        top: 50%;
+        left: 0;
+      }
+
+      50% {
+        top: 50%;
+        left: 50%;
+      }
+
+      75% {
+        top: 0;
+        left: 50%;
+      }
+
+      100% {
+        top: 0;
+        left: 0;
+      }
+    }
+
+    @-webkit-keyframes cyan-shadow {
+      0% {
+        right: 0;
+        bottom: 0;
+      }
+
+      25% {
+        right: 0;
+        bottom: 50%;
+      }
+
+      50% {
+        right: 50%;
+        bottom: 50%;
+      }
+
+      75% {
+        right: 50%;
+        bottom: 0;
+      }
+
+      100% {
+        right: 0;
+        bottom: 0;
+      }
+    }
+
+    @keyframes cyan-shadow {
+      0% {
+        right: 0;
+        bottom: 0;
+      }
+
+      25% {
+        right: 0;
+        bottom: 50%;
+      }
+
+      50% {
+        right: 50%;
+        bottom: 50%;
+      }
+
+      75% {
+        right: 50%;
+        bottom: 0;
+      }
+
+      100% {
+        right: 0;
+        bottom: 0;
+      }
+    }
+
+    @-webkit-keyframes gradient-shadow {
+      0% {
+        -webkit-box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+        box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+      }
+
+      20% {
+        -webkit-box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+        box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+      }
+
+      40% {
+        -webkit-box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0;
+        box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0;
+      }
+
+      60% {
+        -webkit-box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+        box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+      }
+
+      80% {
+        -webkit-box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+        box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+      }
+
+      100% {
+        -webkit-box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+        box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+      }
+    }
+
+    @keyframes gradient-shadow {
+      0% {
+        -webkit-box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+        box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+      }
+
+      20% {
+        -webkit-box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+        box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+      }
+
+      40% {
+        -webkit-box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0;
+        box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0;
+      }
+
+      60% {
+        -webkit-box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+        box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+      }
+
+      80% {
+        -webkit-box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+        box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+      }
+
+      100% {
+        -webkit-box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+        box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+      }
+    }
+
+    @-webkit-keyframes half-yellow-shadow {
+      0% {
+        top: 0;
+        left: 0;
+        height: 50%;
+        width: 50%;
+      }
+
+      16.66% {
+        top: 0;
+        left: 0;
+        height: 50%;
+        width: 100%;
+      }
+
+      32.32% {
+        top: 0;
+        left: 50%;
+        height: 50%;
+        width: 50%;
+      }
+
+      49.98% {
+        top: 50%;
+        left: 50%;
+        height: 50%;
+        width: 50%;
+      }
+
+      66.64% {
+        top: 50%;
+        left: 0;
+        height: 50%;
+        width: 100%;
+      }
+
+      83.3% {
+        top: 50%;
+        left: 0;
+        height: 50%;
+        width: 50%;
+      }
+
+      100% {
+        top: 0;
+        left: 0;
+        height: 50%;
+        width: 50%;
+      }
+    }
+
+    @keyframes half-yellow-shadow {
+      0% {
+        top: 0;
+        left: 0;
+        height: 50%;
+        width: 50%;
+      }
+
+      16.66% {
+        top: 0;
+        left: 0;
+        height: 50%;
+        width: 100%;
+      }
+
+      32.32% {
+        top: 0;
+        left: 50%;
+        height: 50%;
+        width: 50%;
+      }
+
+      49.98% {
+        top: 50%;
+        left: 50%;
+        height: 50%;
+        width: 50%;
+      }
+
+      66.64% {
+        top: 50%;
+        left: 0;
+        height: 50%;
+        width: 100%;
+      }
+
+      83.3% {
+        top: 50%;
+        left: 0;
+        height: 50%;
+        width: 50%;
+      }
+
+      100% {
+        top: 0;
+        left: 0;
+        height: 50%;
+        width: 50%;
+      }
+    }
+
+    @-webkit-keyframes half-cyan-shadow {
+      0% {
+        bottom: 0;
+        right: 0;
+        height: 50%;
+        width: 50%;
+      }
+
+      16.66% {
+        bottom: 0;
+        right: 0;
+        height: 50%;
+        width: 100%;
+      }
+
+      32.32% {
+        bottom: 0;
+        right: 50%;
+        height: 50%;
+        width: 50%;
+      }
+
+      49.98% {
+        bottom: 50%;
+        right: 50%;
+        height: 50%;
+        width: 50%;
+      }
+
+      66.64% {
+        bottom: 50%;
+        right: 0;
+        height: 50%;
+        width: 100%;
+      }
+
+      83.3% {
+        bottom: 50%;
+        right: 0;
+        height: 50%;
+        width: 50%;
+      }
+
+      100% {
+        bottom: 0;
+        right: 0;
+        height: 50%;
+        width: 50%;
+      }
+    }
+
+    @keyframes half-cyan-shadow {
+      0% {
+        bottom: 0;
+        right: 0;
+        height: 50%;
+        width: 50%;
+      }
+
+      16.66% {
+        bottom: 0;
+        right: 0;
+        height: 50%;
+        width: 100%;
+      }
+
+      32.32% {
+        bottom: 0;
+        right: 50%;
+        height: 50%;
+        width: 50%;
+      }
+
+      49.98% {
+        bottom: 50%;
+        right: 50%;
+        height: 50%;
+        width: 50%;
+      }
+
+      66.64% {
+        bottom: 50%;
+        right: 0;
+        height: 50%;
+        width: 100%;
+      }
+
+      83.3% {
+        bottom: 50%;
+        right: 0;
+        height: 50%;
+        width: 50%;
+      }
+
+      100% {
+        bottom: 0;
+        right: 0;
+        height: 50%;
+        width: 50%;
+      }
+    }
+
+    .header-long-descriptions-of-services .descriptions {
+      width: 1480px;
+      height: 3000px;
+      border: 4px solid green;
+      padding: 10px;
+      align-items: flex-end;
+      flex-direction: row;
+    }
+
+    /* .descriptions0001 {
+    width: 1480px;
+    height: 3000px;
+    border: 4px solid green;
+    padding: 10px;
+    align-items: flex-end;
+    flex-direction: row;
+} */
+
+
+
+    .web-development-description1 {
+      font-size: 25px;
+      width: 1050px;
+      height: 70px;
+      /* border: 4px solid green; */
+      padding: 4px;
+      align-items: flex-end;
+      flex-direction: row-reverse;
+
+    }
+
+    .i-web-development-pic2 {
+      /* margin: -128px 210px; */
+      size: 80%;
+
+    }
+
+    .web-development-description2 {
+      font-size: 26px;
+      width: 1050px;
+      height: 70px;
+      /* border: 4px solid green; */
+      padding: 4px;
+      /* margin: -305px 5px; */
+      position: relative;
+      top: 0px;
+      left: 0px;
+      align-items: flex-end;
+      flex-direction: row-reverse;
+    }
+
+    .i-web-development-pic:hover {
+      size: 110%;
+    }
+
+    .header-long-descriptions-of-services h3 {
+      display: block;
+      font-size: 2.7em;
+      margin-block-start: 0em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+    }
+
+
+    .header-long-descriptions-of-services p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .web-development-description1 {
+      position: relative;
+      top: -300px;
+      left: 400px;
+      font-size: 25px;
+      width: 1050px;
+      height: 70px;
+      /* border: 4px solid green; */
+      padding: 4px;
+      align-items: flex-end;
+      flex-direction: row-reverse;
+
+
+    }
+
+    .web-development-description0001 {
+      position: relative;
+      top: 300px;
+      left: 400px;
+      font-size: 25px;
+      width: 1050px;
+      height: 70px;
+      /* border: 4px solid green; */
+      padding: 4px;
+      align-items: flex-end;
+      flex-direction: row-reverse;
+
+
+    }
+
+    .wrapper0001 {
+      height: 20vh;
+      width: 1300px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .web-development-description-nextline-beginning {
+      font-size: 20px;
+      width: 450px;
+      height: 70px;
+      /* border: 4px solid green; */
+      padding: 4px;
+      /* margin: -300px 400px; */
+      align-items: flex-end;
+      flex-direction: row-reverse;
+      /* margin: 20px -390px; */
+      position: relative;
+      top: 15px;
+      left: -380px;
+      right: 0px;
+      bottom: 0px;
+    }
+
+    .i-web-development-pic {
+      position: relative;
+      bottom: 0px;
+      right: 0 px;
+      left: 40px;
+      top: 50px;
+    }
+
+    .i-web-development-pic {
+      transition: 1s ease;
+    }
+
+    .i-web-development-pic:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      transition: 1s ease;
+    }
+
+    .i-web-development-pic0001 {
+      position: relative;
+      bottom: 0px;
+      right: 0 px;
+      left: 40px;
+      top: 600px;
+    }
+
+    .i-web-development-pic0001 {
+      transition: 1s ease;
+    }
+
+    .i-web-development-pic0001:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      transition: 1s ease;
+    }
+
+
+
+    .web-development-pic2 {
+      margin: 1px 1px;
+      size: 30%;
+      padding: 12px;
+    }
+
+    .i-web-development-pic2 {
+      width: 700px;
+      height: fit-content;
+      border-radius: 2px;
+      border-radius: 35px;
+
+      position: relative;
+      bottom: 0px;
+      right: 0px;
+      left: 210px;
+      top: 0px;
+    }
+
+    .i-web-development-pic2 {
+      transition: 1s ease;
+    }
+
+    .i-web-development-pic2:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      transition: 1s ease;
+    }
+
+
+
+    .web-development-description-nextline-beginning {
+      font-size: 20px;
+      width: 450px;
+      height: 70px;
+      /* border: 4px solid green; */
+      padding: 4px;
+      /* margin: -300px 400px; */
+      align-items: flex-end;
+      flex-direction: row-reverse;
+      /* margin: 20px -390px; */
+      position: relative;
+      top: 15px;
+      left: -380px;
+      right: 0px;
+      bottom: 0px;
+    }
+
+    .i-web-development-pic {
+      position: relative;
+      bottom: 0px;
+      right: 0 px;
+      left: 40px;
+      top: 50px;
+    }
+
+    .i-web-development-pic {
+      transition: 1s ease;
+    }
+
+    .i-web-development-pic:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      transition: 1s ease;
+    }
+
+
+    .web-development-pic20001 {
+      margin: 1px 1px;
+      size: 30%;
+      padding: 12px;
+    }
+
+    .i-web-development-pic20001 {
+      width: 700px;
+      height: fit-content;
+      border-radius: 2px;
+      border-radius: 35px;
+
+      position: relative;
+      bottom: 0px;
+      right: 0px;
+      left: 210px;
+      top: 0px;
+    }
+
+    .i-web-development-pic20001 {
+      transition: 1s ease;
+    }
+
+    .i-web-development-pic20001:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      transition: 1s ease;
+    }
+
+    .web-development0001 {
+      position: relative;
+      top: 0px;
+      left: -130px;
+      font-size: 20px;
+
+    }
+
+    .i-web-development-pic3 {
+      transition: 1s ease;
+      position: relative;
+      left: 36px;
+      top: -112px;
+      size: 30%;
+      padding: 12px;
+      border-radius: 35px;
+      width: 500px;
+      height: fit-content;
+    }
+
+    .i-web-development-pic3:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      transition: 1s ease;
+    }
+
+    .i-web-development-pic4 {
+      transition: 1s ease;
+      position: relative;
+      left: 38px;
+      top: -38px;
+      size: 30%;
+      padding: 12px;
+      border-radius: 35px;
+      width: 500px;
+      height: fit-content;
+    }
+
+    .i-web-development-pic4:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      transition: 1s ease;
+    }
+
+    /* .web-development-pic3no{
+    position: relative;
+    left: 0px;
+    top: 0px;
+      size: 30%;
+      padding: 12px;
+      border-radius: 35px;
+      width: 400px;
+      height: fit-content;
+
+} */
+
+    .marquee1 {
+      padding: -20px 20px;
+      width: 15%;
+      height: auto;
+
+
+    }
+
+    .marquee-style {
+      position: relative;
+      bottom: 0px;
+      right: 0px;
+      left: 30px;
+      top: 400px;
+
+      width: 1414px;
+      height: fit-content;
+
+
+
+    }
+
+    .web-development-description1 .wrapper {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .web-development-description1 h1 {
+      font-size: 45px;
+
+    }
+
+    .web-development-description2 h1 {
+      font-size: 24px;
+
+    }
+
+    .descriptions2 {
+      width: 1480px;
+      height: 3000px;
+      position: relative;
+      bottom: 0px;
+      left: -12px;
+      right: 0px;
+      top: 1210px;
+      /* border: 4px solid green; */
+      padding: 10px;
+      margin: -2px;
+      align-items: flex-end;
+      flex-direction: row;
+    }
+
+    .descriptions2 .div.wrapper {
+      width: 1480px;
+      height: fit-content;
+    }
+
+    .wrapper2 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: normal;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: flex-start;
+      overflow: hidden;
+      width: 1480px;
+    }
+
+    .descriptions3 {
+      width: 1480px;
+      height: 3000px;
+      position: relative;
+      bottom: 0px;
+      left: -420px;
+      right: 0px;
+      top: 60px;
+      /* border: 4px solid green; */
+      padding: 10px;
+      margin: -2px;
+      align-items: flex-end;
+      flex-direction: row;
+    }
+
+    .web-development-description-nextline-beginning2 {
+      position: relative;
+      left: 990px;
+      right: 0px;
+      top: -65px;
+      bottom: 0px;
+
+      font-size: 20px;
+      width: 950px;
+      height: 70px;
+      /* border: 4px solid green; */
+      padding: 4px;
+      margin: -300px 400px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      margin: 20px -390px;
+      text-align: right;
+
+
+    }
+
+    p.web-development-description-nextline-beginning2 {
+      text-align: left;
+
+    }
+
+    /* .web-development-pic3{
+  position: relative;;
+  left:0px ;
+  right:0px ;
+  top:-15px;
+  bottom: 0px;
+} */
+    #web-development-description-nextline-beginning-header-3 {
+      position: relative;
+      left: 435px;
+      right: 0px;
+      top: 210px;
+      bottom: 0px;
+    }
+
+    #wrapper3 {
+      font-size: 20px;
+    }
+
+    #web-development-description3 h1 {
+      font-size: 30px;
+    }
+
+    #web-development-description3 h5 {
+      position: relative;
+      left: 45px;
+      top: -35px;
+
+      font-size: 20px;
+      width: 1300px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+
+
+
+
+
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .btn {
+      width: 380px;
+      height: 560px;
+      padding: 20px;
+      background-color: #000000;
+      display: -webkit-box;
+      align-items: center;
+      justify-content: center;
+      margin-left: 2em;
+      margin-right: 3em;
+      margin-top: 2em;
+      margin-bottom: 1em;
+
+      cursor: pointer;
+      transition: all 0.3s;
+      border-radius: 10px;
+    }
+
+    i.fa {
+      font-size: 44px;
+    }
+
+    #fb {
+      color: #006fff;
+      text-shadow: 0 0 30px #006fff;
+    }
+
+    #ig {
+      color: #ffff00;
+      text-shadow: 0 0 30px #f5ed05;
+    }
+
+    #tw {
+      color: #06e4f8;
+      text-shadow: 0 0 30px #04fbff;
+    }
+
+    .btn.fb-btn {
+      box-shadow: 0 20px 20px -17px rgba(0, 110, 255, 0.938);
+
+    }
+
+    .btn.fb-btn:hover {
+      transform: scale(1.2);
+      box-shadow: 0 30px 45px -15px rgba(0, 110, 255, 0.955);
+    }
+
+    .btn.ig-btn {
+      box-shadow: 0 20px 20px -17px rgba(228, 224, 1, 0.596);
+    }
+
+    .btn.ig-btn:hover {
+      transform: scale(1.2);
+      box-shadow: 0 30px 45px -15px rgba(210, 237, 3, 0.829);
+    }
+
+    .btn.tw-btn {
+      box-shadow: 0 20px 20px -17px rgba(0, 255, 255, 0.53);
+    }
+
+    .btn.tw-btn:hover {
+      transform: scale(1.2);
+      box-shadow: 0 30px 45px -15px rgba(0, 242, 255, 0.6);
+    }
+
+    .btn .fb-btn.iconneo {
+      width: 20%;
+      height: auto;
+      position: relative;
+      left: 0px;
+      top: 0px;
+    }
+
+    /* .btn{
+  width: 20%;
+  height: auto;
+  
+} */
+    .container {
+      position: relative;
+      left: 0px;
+      top: 0px;
+
+    }
+
+    .container.btn .fb-btn.fa .fa-facebook p {
+      font-size: 12px;
+
+    }
+
+    #iconneo1 {
+      font-size: 10px;
+    }
+
+    /* h4{
+  color: white;
+} */
+.web-app-buy-now-products-list p {
+      display: block;
+      margin-block-start: 0em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-size: 15px;
+    }
+
+    .web-app-buy-now-products-list h2 {
+      font-size: 40px;
+    }
+
+    .web-app-buy-now-products-list h4 {
+      font-size: 45px;
+    }
+
+    .btn::-webkit-scrollbar {
+      display: none;
+    }
+
+    div.btn {
+      overflow-y: auto;
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+
+    .buy1 {
+      height: 85px;
+      width: 380px;
+    }
+
+    .buynowh1 {
+      position: relative;
+      top: -18px;
+      left: 0px;
+    }
+    .web-app-buy-now-products-list{
+      position: relative;
+      width: 1480px;
+      top: 400px;
+      left: 0px;
+
+    }
+    .web-app-buy-now-products-list.buynowh1 {
+      position: relative;
+      top: -65px;
+      left: 0px;
+    }
+    .web-app-buy-now-products-list h3{
+      font-size: 1.7em;
+    }
+  
+  </style>
+
+
+</head>
+
+<body>
+  <div class="header-long-descriptions-of-services" id="header-long-descriptions-of-services">
+    <div class="descriptions" id="description1">
+      <div class="web-development-pic1" id="web-development-pic1">
+        <a href="https://www.tdil.org.in" target="_blank"><img class="i-web-development-pic" id="i-web-development-pic1"
+            src="pic/webdesign2.png" alt="TDIL Consultancy Services Brand Logo"></a>
+      </div>
+      <div class="web-development-description1" id="web-development-description1">
+        <a href="https://www.tdil.org.in" target="_blank">
+          <h3 class="web-development" id="wddd1">
+            <div class="wrapper">
+              <div class="main-div main-div1">
+                <h1>Web Designing</h1>
+              </div>
+              <div class="main-div main-div2">
+                <h1> &nbsp;&&nbsp;</h1>
+              </div>
+              <div class="main-div main-div3">
+                <h1>Development Services</h1>
+              </div>
+            </div>
+          </h3>
+        </a>
+        <p>In online industries, there is an exposed race among the companies working in the development of websites and
+          their Designing. At TDILCS, we independently take charge to deliver a concrete and statutory production of
+          websites. We evolve preeminent websites that perform well with great potential to maintain their elementary
+          and figurative response which definitely embarks your business and take them to a new height of success.<br>
+        <div class="web-development-description-nextline-beginning">
+          We provide expert solutions in Website designing, Hosting websites, Responsive domains, Professional solution,
+          and all-around Management with cross-platform compatibility. We make sure to design logically customized and
+          impactful websites that are aligned to search engines, trusted and certified with great mobile
+          endurance.<br><br>
+
+          TDIL Consultancy Services (TDILCS) is indigenously competent to deliver exclusively design websites with a
+          great user interface that leads your productivity a way higher. We value our associates and compliance
+          regularly in our deliberated scenario.<br><br>
+
+          From structure to layouts and developing to deliver we maintain effective designing and developing process. We
+          at TDILCS are always keen and curious to go beyond in designing and structuring websites that fulfill the
+          exact requirements of the clientele.</p>
+        </div>
+        <div class="web-development-pic2" id="web-development-pic2">
+          <a href="https://www.tdil.org.in" target="_blank"><img class="i-web-development-pic2"
+              id="i-web-development-pic2" src="pic/desi1a1@2x.png" alt="TDIL Consultancy Services Brand Logo"></a>
+        </div>
+      </div>
+
+
+      <div class="descriptions0001" id="description0001">
+        <div class="web-development-pic0001" id="web-development-pic0001">
+          <a href="https://www.tdil.org.in" target="_blank"><img class="i-web-development-pic0001"
+              id="i-web-development-pic0001" src="pic/webdesign2.png" alt="TDIL Consultancy Services Brand Logo"></a>
+        </div>
+        <div class="web-development-description0001" id="web-development-description0001">
+          <a href="https://www.tdil.org.in" target="_blank">
+            <h3 class="web-development0001" id="wddd10001">
+              <div class="wrapper0001">
+                <div class="main-div main-div1">
+                  <h1>Web Designing</h1>
+                </div>
+                <div class="main-div main-div2">
+                  <h1> &nbsp;&&nbsp;</h1>
+                </div>
+                <div class="main-div main-div3">
+                  <h1>Development Services</h1>
+                </div>
+              </div>
+            </h3>
+          </a>
+
+
+
+          <p>In online industries, there is an exposed race among the companies working in the development of websites
+            and
+            their Designing. At TDILCS, we independently take charge to deliver a concrete and statutory production of
+            websites. We evolve preeminent websites that perform well with great potential to maintain their elementary
+            and figurative response which definitely embarks your business and take them to a new height of success.<br>
+          <div class="web-development-description-nextline-beginning">
+            We provide expert solutions in Website designing, Hosting websites, Responsive domains, Professional
+            solution,
+            and all-around Management with cross-platform compatibility. We make sure to design logically customized and
+            impactful websites that are aligned to search engines, trusted and certified with great mobile
+            endurance.<br><br>
+
+            TDIL Consultancy Services (TDILCS) is indigenously competent to deliver exclusively design websites with a
+            great user interface that leads your productivity a way higher. We value our associates and compliance
+            regularly in our deliberated scenario.<br><br>
+
+            From structure to layouts and developing to deliver we maintain effective designing and developing process.
+            We
+            at TDILCS are always keen and curious to go beyond in designing and structuring websites that fulfill the
+            exact requirements of the clientele.</p>
+          </div>
+          <div class="web-development-pic20001" id="web-development-pic20001">
+            <a href="https://www.tdil.org.in" target="_blank"><img class="i-web-development-pic20001"
+                id="i-web-development-pic20001" src="pic/desi1a1@2x.png" alt="TDIL Consultancy Services Brand Logo"></a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="descriptions2" id="description2">
+        <div class="web-development-description2" id="web-development-description2">
+          <a href="https://www.tdil.org.in" target="_blank">
+            <h3 class="web-development2" id="wddd2">
+              <div class="wrapper2">
+                <div class="main-div main-div1">
+                  <h1>Why you should choose</h1>
+                </div>
+                <div class="main-div main-div2">
+                  <h1> &nbsp;TDILCS&nbsp;</h1>
+                </div>
+                <div class="main-div main-div3">
+                  <h1>as the best Web-Designing & App Development Company in the World?</h1>
+                </div>
+              </div>
+            </h3>
+          </a>
+          <div class="web-development-description-nextline-beginning2">
+
+            <p>TDILCS is the World's No.1 fastest growing, Web-Designing & App Development Company. </p>
+            <p>Affordable & Reasonable cost for website designing and app development.</p>
+            <p>No hidden cost, No unwanted charges. No arguments & No harrassement. </p>
+            <p>Everything is executed stricly according to the rules of TDIL Consultancy Services &<br> TDIL the
+              Wondrous Group.</p>
+            <p>Written Contract & Rules Hard-Copy is always provided & granted with hassle free process.</p>
+            <P>Get 24 hours Technical Support on any working days.</P>
+            <P>100% Free Life Time Technical Support</P>
+            <P>Search Engine friendly website & Android Applications</P>
+            <P>Always Latest & the best technology used for website design</P>
+            <P>Responsive-ness & Security on product is guranteed. </P>
+
+
+          </div>
+          <!-- <div class="web-development-pic3" id="web-development-pic3">
+            <a href="https://www.tdil.org.in" target="_blank"><img class="i-web-development-pic" id="i-web-development-pic1" src="pic/webdesign2.png"
+              alt="TDIL Consultancy Services Brand Logo"></a>
+          </div> -->
+          <div class="web-development-pic3no" id="web-development-pic3no">
+            <a href="https://www.tdil.org.in" target="_blank"><img class="i-web-development-pic3"
+                id="i-web-development-pic3" src="pic/desi1a1@2x.png" alt="TDIL Consultancy Services Brand Logo"></a>
+            <a href="https://www.tdil.org.in" target="_blank"><img class="i-web-development-pic4"
+                id="i-web-development-pic4" src="pic/desi1a1@2x.png" alt="TDIL Consultancy Services Brand Logo"></a>
+          </div>
+
+
+          <div class="web-development-description-nextline-beginning"
+            id="web-development-description-nextline-beginning-header-3">
+            <div class="descriptions3" id="description3">
+              <div class="web-development-description2" id="web-development-description3">
+                <a href="https://www.tdil.org.in" target="_blank">
+                  <h3 class="web-development2" id="wddd2">
+                    <div class="wrapper2" id="wrapper3">
+                      <div class="main-div main-div1">
+                        <h1>WEBSITE & APP</h1>
+                      </div>
+                      <div class="main-div main-div2">
+                        <h1> &nbsp;DESIGNING AND DEVELOPMENT&nbsp;</h1>
+                      </div>
+                      <div class="main-div main-div3">
+                        <h1>PACKAGES FOR PC/IOS/ANDROID</h1>
+                      </div>
+                    </div>
+                  </h3>
+                </a>
+
+                <h5><a href="https://www.tdil.org.in" style="text-decoration:none ;">Innovating the technology |
+                    Innovating the Future | Meet ArquiroSpark Technologies | Powered by TDILCS & TDIL the Wondrous Group
+                </h5></a>
+
+
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div class="web-app-buy-now-products-list" id="web-app-buy-now-products-list">
+
+
+            <div class="container" id="container1">
+
+              <div class="btn fb-btn" id="iconneo1">
+                <i class="fa fa-facebook" id="fb">
+                  <h4>&#x1F496;Basic</h4>
+                  <h2>5000/-</h2>
+                  <p>Up to 2 pages</p>
+                  <p>Theme Based Static Website</p>
+                  <p>Dynamic Contact Form</p>
+                  <p>Dynamic Query Form </p>
+                  <p>Google Map</p>
+                  <p>SSL Integration</p>
+                  <p>Highly Secured Script</p>
+                  <p>Lifetime Support</p>
+                  <p>Lifetime Warranty</p>
+                  <img class="iconNeo" id="iconneo">
+                </i>
+          
+              </div>
+              <div class="btn ig-btn" id="iconneo2">
+                <i class="fa fa-instagram" id="ig">
+                  <h4>&#x1F496;Personal Standard</h4>
+                  <h2>10000/-</h2>
+                  <p>Up to 4 pages</p>
+                  <p>Responsive Design</p>
+                  <p>SEO Friendly URL </p>
+                  <p>Dynamic Contact Form</p>
+                  <p>Img Gallery </p>
+                  <p>Animated Banner (Jquery) </p>
+                  <p>Live Chat integration</p>
+                  <p>Google Map</p>
+                  <p>Google Submission</p>
+                  <p>Optimized for Fast Loading</p>
+                  <p>SSL Integration</p>
+                  <p>Highly Secured Script</p>
+                  <p>Lifetime Support</p>
+                  <p>Lifetime Warranty</p>
+                </i>
+              </div>
+              <div class="btn tw-btn" id="iconneo3">
+                <i class="fa fa-twitter" aria-hidden="true" id="tw">
+                  <h4>&#x1F496;Business Standard</h4>
+                  <h2>15000/-</h2>
+                  <p>Up to 6 pages</p>
+                  <p>Dynamic Website</p>
+                  <p>Theme Based Design</p>
+                  <p>Content Management System</p>
+                  <p>Customer Testimonial</p>
+                  <p>Meta Tag Optimized</p>
+                  <p>Favicon & Image Link</p>
+                  <p>Advance Search</p>
+                  <p>Service List</p>
+                  <p>Service Category</p>
+                  <p>Responsive Design</p>
+                  <p>SEO Friendly URL </p>
+                  <p>Dynamic Contact Form</p>
+                  <p>Img Gallery </p>
+                  <p>Animated Banner (Jquery) </p>
+                  <p>Live Chat integration</p>
+                  <p>Google Map</p>
+                  <p>Google Submission</p>
+                  <p>Optimized for Fast Loading</p>
+                  <p>SSL Integration</p>
+                  <p>Highly Secured Script</p>
+                  <p>Lifetime Support</p>
+                  <p>Lifetime Warranty</p>
+                  <img class="iconNeo" id="iconneo">
+                </i>
+                </i>
+              </div>
+          
+          
+          
+            </div>
+            
+            <div class="container" id="container1buynow1">
+              <div class="btn fb-btn buy1" id="iconneo1">
+                <i class="fa fa-facebook" id="fb">
+                  <div class="buynow1" id="buynow1">
+                    <h3 class="buynowh1" id="buynowh1r1c1">Buy Now</h3>
+                  </div>
+          
+                </i>
+              </div>
+              <div class="btn ig-btn buy1" id="iconneo2">
+                <i class="fa fa-instagram" id="ig">
+                  <div class="buynow1" id="buynow1">
+                    <h3 class="buynowh1" id="buynowh1r1c1">Buy Now</h3>
+                  </div>
+                </i>
+              </div>
+              <div class="btn tw-btn buy1" id="iconneo3">
+                <i class="fa fa-twitter" aria-hidden="true" id="tw">
+                  <div class="buynow1" id="buynow1">
+                    <h3 class="buynowh1" id="buynowh1r1c1">Buy Now</h3>
+                  </div>
+                </i>
+              </div>
+            </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            <div class="container" id="container1">
+              <div class="btn fb-btn" id="iconneo4">
+                <i class="fa fa-facebook" aria-hidden="true" id="fb">
+                  <img class="iconNeo" id="iconneo">
+                  <h4>&#x1F496;E-COMMERCE Standard</h4>
+                  <h2>20000/-</h2>
+                  <p>Up to 8 pages</p>
+                  <p>Dynamic Website</p>
+                  <p>Theme Based Design</p>
+                  <p>Content Management System</p>
+                  <p>Customer Testimonial</p>
+                  <p>Meta Tag Optimized</p>
+                  <p>Favicon & Image Link</p>
+                  <p>Advance Search</p>
+                  <p>Service List</p>
+                  <p>Service Category</p>
+                  <p>Responsive Design</p>
+                  <p>SEO Friendly URL </p>
+                  <p>Dynamic Contact Form</p>
+                  <p>Img Gallery </p>
+                  <p>Animated Banner (Jquery) </p>
+                  <p>Live Chat integration</p>
+                  <p>Google Map</p>
+                  <p>Google Submission</p>
+                  <p>Optimized for Fast Loading</p>
+                  <p>SSL Integration</p>
+                  <p>Highly Secured Script</p>
+                  <p>Live Chat Integration</p>
+                  <p>Google Console Submission</p>
+                  <p>Google Analytics Submission</p>
+                  <p>Lifetime Support</p>
+                  <p>Lifetime Warranty</p>
+          
+                  <img class="iconNeo" id="iconneo">
+                </i></i>
+              </div>
+              <div class="btn ig-btn" id="iconneo5">
+                <i class="fa fa-instagram" aria-hidden="true" id="ig">
+                  <h4>&#x1F496;E-Commerce Premium</h4>
+                  <h2>25000/-</h2>
+                  <p>Up to 10 pages</p>
+                  <p>Dynamic Website</p>
+                  <p>Theme Based Design</p>
+                  <p>Content Management System</p>
+                  <p>Customer Testimonial</p>
+                  <p>Meta Tag Optimized</p>
+                  <p>Favicon & Image Link</p>
+                  <p>Advance Search</p>
+                  <p>Service List</p>
+                  <p>Service Category</p>
+                  <p>Responsive Design</p>
+                  <p>SEO Friendly URL </p>
+                  <p>Dynamic Contact Form</p>
+                  <p>Img Gallery </p>
+                  <p>Animated Banner (Jquery) </p>
+                  <p>Live Chat integration</p>
+                  <p>Google Map</p>
+                  <p>Google Submission</p>
+                  <p>Optimized for Fast Loading</p>
+                  <p>SSL Integration</p>
+                  <p>Highly Secured Script</p>
+                  <p>Live Chat Integration</p>
+                  <p>Google Console Submission</p>
+                  <p>Google Analytics Submission</p>
+                  <p>Optimized Meta Tags</p>
+                  <P>Optimized SEO for TOP Ranking</P>
+                  <p>Lifetime Support</p>
+                  <p>Lifetime Warranty</p>
+                  <img class="iconNeo" id="iconneo">
+                </i>
+                </i>
+              </div>
+              <div class="btn tw-btn" id="iconneo6">
+                <i class="fa fa-twitter" aria-hidden="true" id="tw">
+                  <h4>&#x1F496;INDUSTRIAL Standard</h4>
+                  <h2>30000/-</h2>
+                  <p>Up to 12 pages</p>
+                  <p>Dynamic Website</p>
+                  <p>Animating Designing</p>
+                  <p>Theme Based Design</p>
+                  <p>Content Management System</p>
+                  <p>Customer Testimonial</p>
+                  <p>Meta Tag Optimized</p>
+                  <p>Favicon & Image Link</p>
+                  <p>Advance Search</p>
+                  <p>Service List</p>
+                  <p>Service Category</p>
+                  <p>Responsive Design</p>
+                  <p>SEO Friendly URL </p>
+                  <p>Dynamic Contact Form</p>
+                  <p>Img Gallery </p>
+                  <p>Animated Banner (Jquery) </p>
+                  <p>Live Chat integration</p>
+                  <p>Google Map</p>
+                  <p>Google Submission</p>
+                  <p>Optimized for Fast Loading</p>
+                  <p>SSL Integration</p>
+                  <p>Highly Secured Script</p>
+                  <p>Live Chat Integration</p>
+                  <p>Google Console Submission</p>
+                  <p>Google Analytics Submission</p>
+                  <p>Optimized Meta Tags</p>
+                  <P>Optimized SEO for TOP Ranking</P>
+                  <p>Lifetime Support</p>
+                  <p>Lifetime Warranty</p>
+                  <img class="iconNeo" id="iconneo">
+                </i>
+                </i>
+              </div>
+          
+          
+            </div>
+            <div class="container" id="container1buynow1">
+              <div class="btn fb-btn buy1" id="iconneo1">
+                <i class="fa fa-facebook" id="fb">
+                  <div class="buynow1" id="buynow1">
+                    <h3 class="buynowh1" id="buynowh1r1c1">Buy Now</h3>
+                  </div>
+          
+                </i>
+              </div>
+              <div class="btn ig-btn buy1" id="iconneo2">
+                <i class="fa fa-instagram" id="ig">
+                  <div class="buynow1" id="buynow1">
+                    <h3 class="buynowh1" id="buynowh1r1c1">Buy Now</h3>
+                  </div>
+                </i>
+              </div>
+              <div class="btn tw-btn buy1" id="iconneo3">
+                <i class="fa fa-twitter" aria-hidden="true" id="tw">
+                  <div class="buynow1" id="buynow1">
+                    <h3 class="buynowh1" id="buynowh1r1c1">Buy Now</h3>
+                  </div>
+                </i>
+              </div>
+            </div>
+          
+            <div class="container" id="container2">
+              <div class="btn fb-btn" id="iconneo7">
+                <i class="fa fa-facebook" aria-hidden="true" id="fb">
+                  <img class="iconNeo" id="iconneo">
+                  <h4>&#x1F496;INDUSTRIAL Premium</h4>
+                  <h2>50000/-</h2>
+                  <p>Up to 20 pages</p>
+                  <p>Dynamic Website</p>
+                  <p>Animating Designing</p>
+                  <p>Animated Ultra-Neon Light Effects</p>
+                  <P>Responsive Ultra 3D Technologies Based</P>
+                  <P>Ultra 3D Designing with Optimized Superfast Speed</P>
+                  <p>Theme Based Design</p>
+                  <p>Content Management System</p>
+                  <p>Customer Testimonial</p>
+                  <p>Meta Tag Optimized</p>
+                  <p>Favicon & Image Link</p>
+                  <p>Advance Search</p>
+                  <p>Service List</p>
+                  <p>Service Category</p>
+                  <p>Responsive Design</p>
+                  <p>SEO Friendly URL </p>
+                  <p>Dynamic Contact Form</p>
+                  <p>Img Gallery </p>
+                  <p>Animated Banner (Jquery) </p>
+                  <p>Live Chat integration</p>
+                  <p>Google Map</p>
+                  <p>Google Submission</p>
+                  <p>Optimized for Fast Loading</p>
+                  <p>SSL Integration</p>
+                  <p>Highly Secured Script</p>
+                  <p>Live Chat Integration</p>
+                  <p>Google Console Submission</p>
+                  <p>Google Analytics Submission</p>
+                  <p>Optimized Meta Tags</p>
+                  <P>Optimized SEO for TOP Ranking</P>
+                  <p>Lifetime Support</p>
+                  <p>Lifetime Warranty</p>
+                  <img class="iconNeo" id="iconneo">
+                </i></i>
+              </div>
+              <div class="btn ig-btn" id="iconneo8">
+                <i class="fa fa-instagram" aria-hidden="true" id="ig">
+                  <h4>&#x1F496;Basic Android App</h4>
+                  <h2>100,000/-</h2>
+                  <p>Up to 2 pages</p>
+                  <p>Theme Based Static Website</p>
+                  <p>Dynamic Contact Form</p>
+                  <p>Dynamic Query Form </p>
+                  <p>Google Map</p>
+                  <p>SSL Integration</p>
+                  <p>Highly Secured Script</p>
+                  <p>Lifetime Support</p>
+                  <p>Lifetime Warranty</p>
+                  <img class="iconNeo" id="iconneo">
+                </i>
+                </i>
+              </div>
+              <div class="btn tw-btn" id="iconneo9">
+                <i class="fa fa-twitter" aria-hidden="true" id="tw">
+                  <h4>&#x1F496;Standard Android App</h4>
+                  <h2>200,000/-</h2>
+                  <p>Up to 2 pages</p>
+                  <p>Theme Based Static Website</p>
+                  <p>Dynamic Contact Form</p>
+                  <p>Dynamic Query Form </p>
+                  <p>Google Map</p>
+                  <p>SSL Integration</p>
+                  <p>Highly Secured Script</p>
+                  <p>Lifetime Support</p>
+                  <p>Lifetime Warranty</p>
+                  <img class="iconNeo" id="iconneo">
+                </i>
+                </i>
+              </div>
+          
+            </div>
+            <div class="container" id="container1buynow1">
+              <div class="btn fb-btn buy1" id="iconneo1">
+                <i class="fa fa-facebook" id="fb">
+                  <div class="buynow1" id="buynow1">
+                    <h3 class="buynowh1" id="buynowh1r1c1">Buy Now</h3>
+                  </div>
+          
+                </i>
+              </div>
+              <div class="btn ig-btn buy1" id="iconneo2">
+                <i class="fa fa-instagram" id="ig">
+                  <div class="buynow1" id="buynow1">
+                    <h3 class="buynowh1" id="buynowh1r1c1">Buy Now</h3>
+                  </div>
+                </i>
+              </div>
+              <div class="btn tw-btn buy1" id="iconneo3">
+                <i class="fa fa-twitter" aria-hidden="true" id="tw">
+                  <div class="buynow1" id="buynow1">
+                    <h3 class="buynowh1" id="buynowh1r1c1">Buy Now</h3>
+                  </div>
+                </i>
+              </div>
+            </div>
+          
+            <div class="container" id="container3">
+              <div class="btn fb-btn" id="iconneo10">
+                <i class="fa fa-facebook" aria-hidden="true" id="fb"><img class="iconNeo" id="iconneo">
+                  <h4>&#x1F496;Premium Android App</h4>
+                  <h2>300,000/-</h2>
+                  <p>Up to 2 pages</p>
+                  <p>Theme Based Static Website</p>
+                  <p>Dynamic Contact Form</p>
+                  <p>Dynamic Query Form </p>
+                  <p>Google Map</p>
+                  <p>SSL Integration</p>
+                  <p>Highly Secured Script</p>
+                  <p>Lifetime Support</p>
+                  <p>Lifetime Warranty</p>
+                  <img class="iconNeo" id="iconneo">
+                </i> </i>
+              </div>
+              <div class="btn ig-btn" id="iconneo11">
+                <i class="fa fa-instagram" aria-hidden="true" id="ig">
+                  <h4>&#x1F496;Basic IOS App</h4>
+                  <h2>300,000/-</h2>
+                  <p>Up to 2 pages</p>
+                  <p>Theme Based Static Website</p>
+                  <p>Dynamic Contact Form</p>
+                  <p>Dynamic Query Form </p>
+                  <p>Google Map</p>
+                  <p>SSL Integration</p>
+                  <p>Highly Secured Script</p>
+                  <p>Lifetime Support</p>
+                  <p>Lifetime Warranty</p>
+                  <img class="iconNeo" id="iconneo">
+                </i>
+                </i>
+              </div>
+              <div class="btn tw-btn" id="iconneo12">
+                <i class="fa fa-twitter" aria-hidden="true" id="tw">
+                  <h4>&#x1F496;Standard IOS App</h4>
+                  <h2>500,000/-</h2>
+                  <p>Up to 2 pages</p>
+                  <p>Theme Based Static Website</p>
+                  <p>Dynamic Contact Form</p>
+                  <p>Dynamic Query Form </p>
+                  <p>Google Map</p>
+                  <p>SSL Integration</p>
+                  <p>Highly Secured Script</p>
+                  <p>Lifetime Support</p>
+                  <p>Lifetime Warranty</p>
+                  <img class="iconNeo" id="iconneo">
+                </i>
+                </i>
+              </div>
+          
+          
+            </div>
+            <div class="container" id="container1buynow1">
+              <div class="btn fb-btn buy1" id="iconneo1">
+                <i class="fa fa-facebook" id="fb">
+                  <div class="buynow1" id="buynow1">
+                    <h3 class="buynowh1" id="buynowh1r1c1">Buy Now</h3>
+                  </div>
+          
+                </i>
+              </div>
+              <div class="btn ig-btn buy1" id="iconneo2">
+                <i class="fa fa-instagram" id="ig">
+                  <div class="buynow1" id="buynow1">
+                    <h3 class="buynowh1" id="buynowh1r1c1">Buy Now</h3>
+                  </div>
+                </i>
+              </div>
+              <div class="btn tw-btn buy1" id="iconneo3">
+                <i class="fa fa-twitter" aria-hidden="true" id="tw">
+                  <div class="buynow1" id="buynow1">
+                    <h3 class="buynowh1" id="buynowh1r1c1">Buy Now</h3>
+                  </div>
+                </i>
+              </div>
+            </div>
+          
+            <div class="container" id="container3">
+              <div class="btn fb-btn" id="iconneo10">
+                <i class="fa fa-facebook" aria-hidden="true" id="fb"><img class="iconNeo" id="iconneo">
+                  <h4>&#x1F496;Premium IOS App</h4>
+                  <h2>1000,000/-</h2>
+                  <p>Up to 2 pages</p>
+                  <p>Theme Based Static Website</p>
+                  <p>Dynamic Contact Form</p>
+                  <p>Dynamic Query Form </p>
+                  <p>Google Map</p>
+                  <p>SSL Integration</p>
+                  <p>Highly Secured Script</p>
+                  <p>Lifetime Support</p>
+                  <p>Lifetime Warranty</p>
+                  <img class="iconNeo" id="iconneo">
+                </i> </i>
+              </div>
+              <div class="btn ig-btn" id="iconneo11">
+                <i class="fa fa-instagram" aria-hidden="true" id="ig">
+                  <h4>&#x1F496;Standard Windows App</h4>
+                  <h2>500,000/-</h2>
+                  <p>Up to 2 pages</p>
+                  <p>Theme Based Static Website</p>
+                  <p>Dynamic Contact Form</p>
+                  <p>Dynamic Query Form </p>
+                  <p>Google Map</p>
+                  <p>SSL Integration</p>
+                  <p>Highly Secured Script</p>
+                  <p>Lifetime Support</p>
+                  <p>Lifetime Warranty</p>
+                  <img class="iconNeo" id="iconneo">
+                </i>
+                </i>
+              </div>
+              <div class="btn tw-btn" id="iconneo12">
+                <i class="fa fa-twitter" aria-hidden="true" id="tw">
+                  <h4>&#x1F496;Premium Windows App</h4>
+                  <h2>1000,000/-</h2>
+                  <p>Up to 2 pages</p>
+                  <p>Theme Based Static Website</p>
+                  <p>Dynamic Contact Form</p>
+                  <p>Dynamic Query Form </p>
+                  <p>Google Map</p>
+                  <p>SSL Integration</p>
+                  <p>Highly Secured Script</p>
+                  <p>Lifetime Support</p>
+                  <p>Lifetime Warranty</p>
+                  <img class="iconNeo" id="iconneo">
+                </i>
+                </i>
+              </div>
+          
+          
+            </div>
+            <div class="container" id="container1buynow1">
+              <div class="btn fb-btn buy1" id="iconneo1">
+                <i class="fa fa-facebook" id="fb">
+                  <div class="buynow1" id="buynow1">
+                    <h3 class="buynowh1" id="buynowh1r1c1">Buy Now</h3>
+                  </div>
+          
+                </i>
+              </div>
+              <div class="btn ig-btn buy1" id="iconneo2">
+                <i class="fa fa-instagram" id="ig">
+                  <div class="buynow1" id="buynow1">
+                    <h3 class="buynowh1" id="buynowh1r1c1">Buy Now</h3>
+                  </div>
+                </i>
+              </div>
+              <div class="btn tw-btn buy1" id="iconneo3">
+                <i class="fa fa-twitter" aria-hidden="true" id="tw">
+                  <div class="buynow1" id="buynow1">
+                    <h3 class="buynowh1" id="buynowh1r1c1">Buy Now</h3>
+                  </div>
+                </i>
+              </div>
+            </div>
+          
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div>
+
+            <div class="marquee-style" id="marquee-style">  
+        <div class="marquee" id="marquee1">
+          <h2>Our Clients...</h2>
+          <center>
+            <marquee>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee1" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee2" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee3" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee4" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee1" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee2" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee3" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee4" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee1" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee2" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee3" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee4" src="pic/Ai.png"
+                  width="100" height="100"></a>
+            </marquee>
+          </center>
+        </div>
+        <div class="marquee" id="marquee2">
+          <center>
+            <marquee>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee1" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee2" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee3" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee4" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee1" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee2" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee3" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee4" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee1" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee2" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee3" src="pic/Ai.png"
+                  width="100" height="100"></a>
+              <a href="https://www.tdilcs.co.in" target="_blank"><img class="marquee1" id="marquee4" src="pic/Ai.png"
+                  width="100" height="100"></a>
+            </marquee>
+          </center>
+        </div>
+      </div>
+
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
